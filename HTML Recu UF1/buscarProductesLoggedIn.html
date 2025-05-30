@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="estils.css">
+        <script src="scripts.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="homeLoggedIn.html"><img src="img/Ca La Pilar.png" alt="logo" class="logo"></a>
+        <div class="buscador">
+            <a href="buscarProductesLoggedIn.html"><img src="img/busqueda.png" alt="lupa" class="lupa"></a>
+            <input type="text" placeholder="Buscar productes..." value="p">
+            <a href="allProductsLoggedIn.html"><img src="img/creu.png" alt="tancar" class="tancar"></a>
+        </div>
+        <div class="dreta">
+            <a href="#" id="botoMenuUser">Usuari <img class="flechaAbaix" src="img/abaix.png" alt="flecha abaix"></a>
+
+            <div class="menuUsuari">
+              <a href="dadesPersonals.html"> <img src="img/usuari.png" alt="compte"> Compte</a>
+              <a href="homeLoggedOut.html"> <img src="img/sortir.png" alt="sortir"> Tancar sessió</a>
+            </div>
+
+            <a href="#" id="notificacionsBtn"><img src="img/campana.png" alt="notificacions"></a>
+
+            <div id="notificacionsPanel" class="panelNotificacions">
+                <button id="tancarNotificacions"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Notificacions (0)</h1>
+                <hr>
+                <p>No tens cap <br>notificació</p> 
+            </div>
+
+            <a href="#" id="carretBtn">
+                <div class="carretPle">
+                    <img src="img/carretBlau.png" alt="carret">
+                    <span class="unitats">3</span>
+                    <span class="preu">0,90€</span>
+                </div>
+            </a>
+
+            <div id="carretPanel" class="panelNotificacions">
+                <button id="tancarCarret"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Carret (3)</h1>
+                <hr>
+                <p class="invisible">Encara no has<br>afegit productes<br>al carret</p> 
+                <div class="productesCarret">
+                    <div class="producteCarret">
+                        <img src="img/platan.png" alt="platan">
+                        <p class="nom">Platan</p>
+                        <p class="preu"><b>0,20 </b> €/ud</p>
+                        <hr>
+                        <p class="alCarret">Al carret</p>
+                        <p class="unitats"><b>1 </b> ud.</p>
+                        <div class="botonsUnitats">
+                            <img src="img/paperera.png" alt="paperera">
+                            <p class="sumarUnitat">+</p>
+                        </div>
+                    </div>
+                    <div class="producteCarret">
+                        <img src="img/poma.png" alt="poma">
+                        <p class="nom">Poma</p>
+                        <p class="preu"><b>0,35 </b> €/ud</p>
+                        <hr>
+                        <p class="alCarret">Al carret</p>
+                        <p class="unitats"><b>2 </b> ud.</p>
+                        <div class="botonsUnitats">
+                            <p class="sumarUnitat">-</p>
+                            <p class="sumarUnitat">+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carretInferior">
+                    <hr>
+                    <span>Total </span> <p>0,90€</p>
+                    <button onclick="location.href='tramitarComanda.html'">Tramitar la comanda</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr class="vertical">
+    <div class="sidebar">   
+        <h1>Rang de preu (€)</h1>
+        <input type="number" name="min" id="min" min="0" max="1000"placeholder="Min">
+        <input type="number" name="max" id="max" min="0" max="1000" placeholder="Max"> 
+        <br><br>
+        <h1>Categories</h1>
+        <div class="categories">
+            <label>
+                Begudes
+                <input type="checkbox" name="begudes">
+            </label><br>
+
+            <label>
+                Entrepans
+                <input type="checkbox" name="entrepans">
+            </label><br>
+
+            <label>
+                Per picar
+                <input type="checkbox" name="perpicar"> 
+            </label><br>
+
+            <label>
+                Fruita
+                <input type="checkbox" name="fruita" checked>
+            </label><br>
+
+            <label>
+                Menú                
+                <input type="checkbox" name="menu">
+            </label><br>
+
+            <label>
+                Especials                
+                <input type="checkbox" name="especials">
+            </label>
+        </div>
+        <h1>Ordenar per</h1>
+        <div class="selector">
+            <label>
+              <input type="radio" name="opcio" checked>
+              <span>Popularitat</span>
+            </label>
+            <label>
+              <input type="radio" name="opcio">
+              <span>Preu més alt</span>
+            </label>
+            <label>
+              <input type="radio" name="opcio">
+              <span>Preu més baix</span>
+            </label>
+        </div>
+    </div>
+    <div class="catalog">
+        <h1>S’han trobat 3 resultats per “p”</h1>
+        <div class="paginacion">
+            <span class="deshabilitat">← Anterior</span>
+            <span class="negre">1</span>
+            <span class="deshabilitat">Següent →</span>
+        </div>
+        <div class="productes">
+            <div class="producte">
+                <img src="img/poma.png" alt="producte1">
+                <p>Poma</p>
+                <span><b>0,35</b></span><span> €/ud</span>
+                <button class="addCarreto2">Afegir al carretó</button>
+            </div>
+            <div class="producte">
+                <img src="img/platan.png" alt="producte1">
+                <p>Platan</p>
+                <span><b>0,20</b></span><span> €/ud</span>
+                <button class="addCarreto2">Afegir al carretó</button>
+            </div>
+            <div class="producte">
+                <img src="img/pera.png" alt="producte1">
+                <p class="deshabilitat">Pera</p>
+                <span class="deshabilitat"><b>0,40</b></span><span class="deshabilitat"> €/ud</span>
+                <button class="addCarreto2Deshabilitat">Afegir al carretó</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

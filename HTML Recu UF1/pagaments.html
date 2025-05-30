@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="scripts.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="homeLoggedIn.html"><img src="img/Ca La Pilar.png" alt="logo" class="logo"></a>
+        <div class="buscador">
+            <a href="buscarProductesLoggedIn.html"><img src="img/busqueda.png" alt="lupa" class="lupa"></a>
+            <input type="text" placeholder="Buscar productes...">
+        </div>
+        <div class="dreta">
+            <a href="#" id="botoMenuUser">Usuari <img class="flechaAbaix" src="img/abaix.png" alt="flecha abaix"></a>
+            
+            <div class="menuUsuari">
+              <a href="#"> <img src="img/usuari.png" alt="compte"> Compte</a>
+              <a href="homeLoggedOut.html"> <img src="img/sortir.png" alt="sortir"> Tancar sessió</a>
+            </div>
+
+            <a href="#" id="notificacionsBtn"><img src="img/campana.png" alt="notificacions"></a>
+
+            <div id="notificacionsPanel" class="panelNotificacions">
+                <button id="tancarNotificacions"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Notificacions (0)</h1>
+                <hr>
+                <p>No tens cap <br>notificació</p>
+            </div>
+
+            <a href="#" id="carretBtn"><img src="img/carret.png" alt="carret"></a>
+
+            <div id="carretPanel" class="panelNotificacions">
+                <button id="tancarCarret"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Carret</h1>
+                <hr>
+                <p>Encara no has<br>afegit productes<br>al carret</p> 
+                <div class="carretInferior">
+                    <hr>
+                    <span>Total </span> <p>0,00€</p>
+                    <button class="deshabilitat">Tramitar la comanda</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <hr class="verticalPersonal">
+    <div class="sidebarPersonal">   
+        <span> <a href="dadesPersonals.html"> <img src="img/usuari.png" alt="dadesPersonals" style="filter: brightness(0); top: 0px;"> Dades personals </a> </span> 
+        <span> <a href="historialCompres.html"> <img src="img/historialPagaments.png" alt="dadesPersonals"> Historial de compres </a> </span>
+        <span class="seleccionat"> <a href=""> <img src="img/pagament.png" alt="dadesPersonals"> Pagament </a> </span> 
+        <span> <a href="homeLoggedOut.html"> <img src="img/sortir.png" alt="dadesPersonals" style="filter: brightness(0);"> Tancar sessió </a> </span>    
+    </div>
+    <div class="contingutPersonal">
+        <h1>Saldo i mètodes de pagament</h1>
+        <hr>
+        <div class="dadaPersonal">
+            <p>Saldo</p>
+            <h2 style="font-size: 32px;">32,45 €</h2>
+            <div class="botonsSaldo">
+                <button>Afegir saldo</button>
+                <button>Retirar saldo</button>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="dadaPersonal">
+            <p>Tarjetes</p>
+            <div class="tarjeta">
+                <img src="img/visa.png" alt="visa">
+                <div class="dadesTarjeta">
+                    <span>Visa terminada en 0279</span>
+                    <span>Usuari Martinez García</span>
+                    <span>06/2026</span>
+                </div>
+                <button> <img src="img/paperera.png" alt="eliminar"></button>
+            </div>
+
+            <button id="afegirTarjetaBtn" class="afegirTarjeta"> <span>+</span> Afegir una tarjeta nova </button>
+            
+            <div id="overlayTarjeta" class="overlay">
+                <div class="popupTarjeta">
+                  <h1>Afegeix la targeta amb què vols fer les comandes.</h1>
+                    <label for="numeroTarjeta">
+                        <p>Número de tarjeta</p><br>
+                        <input type="text" id="numeroTarjeta" placeholder="0000 0000 0000 0000">
+                    </label>
+                    <label for="validesaTarjeta">
+                        <p>Validesa</p><br>
+                        <input type="text" id="validesaTarjeta" placeholder="MM / YYYY">
+                    </label>
+                    <label for="codiTarjeta">
+                        <p>Codi de seguretat</p><br>
+                        <input type="text" id="codiTarjeta" placeholder="CVV">
+                    </label>
+
+                    <span>
+                        <button onclick="location.href='pagaments.html'" >Cancel·lar</button>
+                        <button class="deshabilitat">Afegir</button>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

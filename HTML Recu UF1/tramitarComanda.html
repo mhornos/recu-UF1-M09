@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="scripts.js"></script>
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <p class="tornarAlsProductes"><a href="allProductsLoggedIn.html"><img src="img/esquerra.png" alt="esquerra"> Tornar als productes</a> </p>
+    </nav>
+
+    <div class="configComanda">
+        <h1>Dies de recollida disponibles</h1>
+        <p>Tria un dia per visualitzar les hores de recollida disponibles</p>
+        <div class="diesRecollida">
+            <div class="dia deshabilitat">
+                <p class="numero">18</p>
+                <p class="text">Avui</p>
+            </div>
+            <div class="dia seleccionat">
+                <p class="numero ">19</p>
+                <p class="text">Dilluns</p>
+            </div>
+            <div class="dia">
+                <p class="numero">20</p>
+                <p class="text">Dimarts</p>
+            </div>
+            <div class="dia">
+                <p class="numero">21</p>
+                <p class="text">Dimecres</p>
+            </div>
+            <div class="dia">
+                <p class="numero">22</p>
+                <p class="text">Dijous</p>
+            </div>
+            <div class="dia">
+                <p class="numero">23</p>
+                <p class="text">Divendres</p>
+            </div>
+            <div class="dia deshabilitat">
+                <p class="numero">24</p>
+                <p class="text">Dissabte</p>
+            </div>
+            <div class="mesDies">
+                <img src="img/dreta.png" alt="dreta">
+                <p>Més dies</p>
+            </div>
+        </div>
+        <hr>
+        <h1>Hora de recollida per a dilluns 19</h1>
+        <p>Tria una hora i confirma per a seguir amb la compra</p>
+        <div class="rellotge">
+            <input type="time" class="horaRecollida" value="13:00">
+        </div>
+    </div>
+    <div class="configComanda">
+        <h1>Métodes de pagament</h1>
+        <div class="tarjeta">
+            <input type="radio" name="opcio" value="1" checked>
+
+            <img src="img/visa.png" alt="visa">
+            <div class="dadesTarjeta">
+                <span>Visa terminada en 0279</span>
+                <span>Usuari Martinez García</span>
+                <span>06/2026</span>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <input type="radio" name="opcio" value="2">
+            <div class="dadesTarjeta saldo" >
+                <span>Saldo disponible al compte</span>
+                <span class="saldoDisp">32,45€</span>
+            </div>
+        </div>
+        <button id="afegirTarjetaBtn"class="afegirTarjeta"> <span>+</span> Afegir una tarjeta nova </button>
+
+        <div id="overlayTarjeta" class="overlay">
+                <div class="popupTarjeta">
+                  <h1>Afegeix la targeta amb què vols fer les comandes.</h1>
+                    <label for="numeroTarjeta">
+                        <p>Número de tarjeta</p><br>
+                        <input type="text" id="numeroTarjeta" placeholder="0000 0000 0000 0000">
+                    </label>
+                    <label for="validesaTarjeta">
+                        <p>Validesa</p><br>
+                        <input type="text" id="validesaTarjeta" placeholder="MM / YYYY">
+                    </label>
+                    <label for="codiTarjeta">
+                        <p>Codi de seguretat</p><br>
+                        <input type="text" id="codiTarjeta" placeholder="CVV">
+                    </label>
+
+                    <span>
+                        <button onclick="location.href='tramitarComanda.html'" >Cancel·lar</button>
+                        <button class="deshabilitat">Afegir</button>
+                    </span>
+                </div>
+            </div>
+
+    </div>
+    <div class="resumComanda">
+        <h1>Resum</h1>
+        <span>Total</span>  
+        <span class="preu">0,90€</span>
+        <button id="finalitzarBtn">Finalitzar la compra</button>
+    </div>
+
+    <div id="overlayFinalitzar" class="overlay">
+        <div class="popupFinalitzar">
+          <h1>Compra exitosa!</h1>
+          <img src="img/correcte.png" alt="correcte">
+          <p>T'hem enviat un correu electrònic a <b>example@gmail.com</b> amb la informació de la comanda.</p>
+          <button onclick="location.href='homeLoggedIn.html'">D'acord</button>
+        </div>
+    </div>
+</body>
+</html>

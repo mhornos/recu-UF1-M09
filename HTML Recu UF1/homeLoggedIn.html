@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estils.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="homeLoggedIn.html"><img src="img/Ca La Pilar.png" alt="logo" class="logo"></a>
+        <div class="buscador">
+            <a href="buscarProductesLoggedIn.html"><img src="img/busqueda.png" alt="lupa" class="lupa"></a>
+            <input type="text" placeholder="Buscar productes...">
+        </div>
+        <div class="dreta">
+            <a href="#" id="botoMenuUser">Usuari <img class="flechaAbaix" src="img/abaix.png" alt="flecha abaix"></a>
+
+            <div class="menuUsuari">
+              <a href="dadesPersonals.html"> <img src="img/usuari.png" alt="compte"> Compte</a>
+              <a href="homeLoggedOut.html"> <img src="img/sortir.png" alt="sortir"> Tancar sessió</a>
+            </div>
+
+            <a href="#" id="notificacionsBtn"><img src="img/campana.png" alt="notificacions"></a>
+
+            <div id="notificacionsPanel" class="panelNotificacions">
+                <button id="tancarNotificacions"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Notificacions (0)</h1>
+                <hr>
+                <p>No tens cap <br>notificació</p> 
+            </div>
+
+            <a href="#" id="carretBtn"><img src="img/carret.png" alt="carret"></a>
+
+            <div id="carretPanel" class="panelNotificacions">
+                <button id="tancarCarret"><img src="img/creuGroga.png" alt="tancar"></button>
+                <h1>Carret</h1>
+                <hr>
+                <p>Encara no has<br>afegit productes<br>al carret</p> 
+                <div class="carretInferior">
+                    <hr>
+                    <span>Total </span> <p>0,00€</p>
+                    <button class="deshabilitat">Tramitar la comanda</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <img src="img/banner.png" alt="banner">
+        <h1>Benvingut a la cantina!</h1>
+        <button class="productesButton" onclick="location.href='allProductsLoggedIn.html'">Veure els productes</button>
+    </div>
+    <div class="contingut">
+        <hr>
+        <h2>Els mes venuts</h2>
+        <h3>Selecció de productes destacats</h3>
+        <div class="productes">
+            <div class="producte">
+                <img src="img/pizzaBaco.png" alt="producte1">
+                <p>Pizza bacó</p>
+                <span><b>1,70</b> €/ud</span>
+                <button class="addCarreto">Afegir al carretó</button>
+            </div>
+            <div class="producte">
+                <img src="img/pizzaTonyina.png" alt="producte1">
+                <p>Pizza tonyina</p>
+                <span><b>2,40</b> €/ud</span>
+                <button class="addCarreto">Afegir al carretó</button>
+            </div>
+            <div class="producte">
+                <img src="img/bacoFormatge.png" alt="producte1">
+                <p>Entrepà bacó i formatge</p>
+                <span><b>2,40</b> €/ud</span>
+                <button class="addCarreto">Afegir al carretó</button>
+            </div>
+            <div class="producte">
+                <img src="img/hamburguesa.png" alt="producte1">
+                <p>Hamburguesa completa</p>
+                <span><b>2,20</b> €/ud</span>
+                <button class="addCarreto">Afegir al carretó</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1530 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #DEF4FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.navbar {
+    background-color: #007C99;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 125px;
+    width: 100%;
+    color: #FFCC00;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 352px;
+    height: 90px;
+    margin-left: 30px;
+    margin-top: 20px;
+    transition: transform 0.1s ease-in-out;  
+}
+
+
+.buscador{
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    border: black 3px solid;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 57px;
+    width: 555px;
+}
+
+.buscador input{
+    position: relative;
+    top: 15px;
+    text-shadow: none;
+    left: 60px;
+    border: none;
+    font-size: 24px;
+    background: none ;
+    outline: none;
+}
+
+.buscador input::placeholder{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.lupa{
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 15px;
+    left: 20px;
+    opacity: 0.3;
+    transition: transform 0.1s ease-in-out;  
+
+}
+
+.dreta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    width: 600px;
+    margin-right: 40px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.1s ease-in-out;  
+}
+
+.dreta a:hover {
+    transform: scale(1.1);
+}
+
+a:hover .lupa {
+    transform: scale(1.2);
+}
+
+a:hover img{
+    transform: scale(1.05); 
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 25px;
+    width: 1124px;
+    height: 300px;
+}
+
+.banner img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+}
+
+.banner h1{
+    position: absolute;
+    font-size: 64px;
+    top: 20px;
+    color: white;
+    font-weight:lighter;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button { 
+    background-color: #FFCC00;
+    color: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 15px 50px;
+    font-size: 36px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease-in-out; 
+}
+
+.productesButton {
+    position: absolute;
+    top: 170px;
+}
+
+button:hover {
+    transform: scale(1.04);
+}
+
+.contingut {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10px;
+    width: 1124px;
+}
+
+hr {
+    width: 100%;
+    height: 3px;
+    background-color: #00000078;
+    opacity: 0.2;
+    border: none;
+    top: 40px;
+    position: relative;
+    border-radius: 100px;
+}
+
+.contingut h2 {
+    position: relative;
+    top: 50px;
+    font-size: 32px;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-self: flex-start;
+}
+
+.contingut h3 {
+    position: relative;
+    top: 10px;
+    font-weight: lighter;
+    font-size: 18px;
+    color: #000000;
+    align-self: flex-start;
+    opacity: 0.5;
+}
+
+.productes {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+}
+
+.producte{
+    width: 218px;
+    margin-right: 40px;
+}
+
+.producte img {
+    width: auto;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.producte p {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+} 
+
+.producte span {
+    position: relative;
+    top: -30px;
+    font-size: 24px;
+}
+
+b {
+    font-weight:900;
+} 
+
+.catalog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30px;
+    left: 150px;
+    width: 1500px;
+    height: 790px;
+}
+
+.vertical {
+    width: 3px;
+    height: 900px;
+    background-color: #000000;
+    left: 310px;
+    border: none;
+    top: 40px;
+    position: absolute;
+    border-radius: 100px;
+    top: 45px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.catalog h1 {
+    position: relative;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    text-shadow: none;
+    opacity: 0.5;
+    align-self: flex-start;
+}
+
+.paginacion {
+    gap: 15px;
+    font-size: 24px;
+    display: flex;
+}
+
+.paginacion span {
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: black 2px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;  
+}
+
+.negre {
+    background-color: #000000;
+    color: white;
+    padding: 4px 16px;
+    border-radius: 8px;
+    display: inline-block; 
+    text-align: center; 
+    cursor:default;
+}
+
+.deshabilitat{
+    opacity: 0.2;
+    box-shadow: none !important;
+    transform: none !important;
+    cursor: default !important;
+}
+
+.paginacion span:hover{
+    transform: scale(1.1);
+}
+
+.paginacion .negre:hover,
+.paginacion .deshabilitat:hover {
+    transform: none;
+    cursor: default;
+}
+
+.catalog .productes {
+    position: relative;
+    top: 30px;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.catalog .producte img {
+    width: 220px;
+    height: 180px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    width: 260px;
+    height: 780px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+}
+
+.sidebar input {
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    border: black 2px solid;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 18px;
+    background:none;
+    margin-right: 5px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 255px;
+}
+
+.categories label {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.categories input[type="checkbox"] {
+    width: 40px; 
+    height: 35px;
+    appearance: none;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    bottom: 8px;
+    transition: transform 0.1s ease;
+}
+
+.categories input[type="checkbox"]:hover {
+    transform: scale(1.1);
+}
+
+.categories input[type="checkbox"]:checked {
+    background-color: #FFCC00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+label:has(input:not(:checked)) {
+    opacity: 0.5;
+}
+
+.selector{
+    font-size: 20px;
+}
+
+.selector span:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease;
+}
+
+.selector label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.selector input[type="radio"] {
+    display: none;
+}
+
+.selector span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.selector input[type="radio"]:checked + span {
+    background-color: #FFCC00;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    opacity: 1;
+    border: #FFCC00 2px solid;
+}
+
+.tancar {
+    position: relative;
+    top: 17px;
+    left: 205px;
+    width: 25px;
+    height: 25px;
+}
+
+.logoLogin {
+    width: 352px;
+    height: 90px;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.loginPantalla {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.meitat {
+    flex: 1;
+}
+
+.esquerraLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dretaLogin img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -8px 0px 8px rgba(0, 0, 0, 0.25);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 436px;
+  gap: 15px;
+}
+
+.loginForm h1 {
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+}
+
+.loginForm input {
+  padding: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+
+.loginForm input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.loginForm input:focus {
+  outline: none;
+  box-shadow: 0 0 15px #ffffff;
+}
+
+.oauth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.oauth img {
+    width: auto;
+    height: 45px;
+    padding: 10px 28px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out;  
+}
+
+.oauth img:hover {
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.separador::before,
+.separador::after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+}
+
+.separador span {
+    padding: 12px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.loginForm button {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.loginForm p {
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.addCarreto {
+    font-size: 18px; 
+    bottom: 20px;
+    position: relative;
+    font-weight: 100;
+    padding: 6px;
+    width: 100%;
+}
+
+.dreta img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.menuUsuari {
+    position: absolute;
+    top: 40px;
+    right: 330px;
+    background-color: #007C99;
+    border: black 3px solid ;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 5px 30px;
+    width: 250px;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.menuUsuari a {
+    display: block;
+    padding: 15px 0px;
+    transition: transform 0.3s ease;
+    color: #FFCC00;
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.menuUsuari img {
+    padding-right: 10px;
+    
+}
+
+.menuUsuari a:last-child {
+  border-bottom: none;
+}
+
+.menuUsuari.visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.menuUsuari a:hover {
+  transform: scale(1.05);
+}
+
+.verticalPersonal {
+    width: 3px;
+    height: 900px;
+    background-color: #000000;
+    left: 350px;
+    border: none;
+    top: 40px;
+    position: absolute;
+    border-radius: 100px;
+    top: 45px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.sidebarPersonal {
+    position: absolute;
+    top: 165px;
+    left: 35px;
+    width: 280px;
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sidebarPersonal span {
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease;
+    opacity: 0.5;
+}
+
+.sidebarPersonal span a:hover {
+  transform: scale(1.05);
+}
+
+.sidebarPersonal img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding-right: 5px;
+    top: 6px;
+}
+
+.contingutPersonal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 10px;
+    width: 1200px;
+    height: 800px;
+    left: 100px;
+}
+
+.contingutPersonal h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+}
+
+.contingutPersonal hr{
+    top: -5px;
+}
+
+.dadaPersonal {
+    gap: 20px;
+    width: 100%;
+    height: 90px;
+}
+
+.dadaPersonal p {
+    font-size: 16px;
+    opacity: 0.5;
+}
+
+.dadaPersonal h2 {
+    font-size: 24px;
+    font-weight: 500;
+    bottom: 15px;
+    position: relative;
+}
+
+.dadaPersonal button{
+    font-size: 24px;
+    left: 1075px;
+    bottom: 80px;
+    padding: 5px 30px;
+    position: relative;
+}
+
+.dadaPersonal button:hover{
+    transform: scale(1.1);
+}
+
+.vermell{
+    background-color: #CA2E2E;
+    color: white;
+}
+
+.dadaPersonal .vermell{
+    bottom: 65px;
+    left: 1052px;
+}
+
+.compraHistorial {
+    position: relative;
+    top: 10px;
+    width: 320px;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+
+}
+
+.compraHistorial p {
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.compraHistorial button {
+    font-size: 24px;
+}
+
+.seleccionat {
+    opacity: 1 !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.botonsSaldo {
+    position: relative;
+    bottom: 90px;
+}
+
+.botonsSaldo button{
+    position: relative;
+    top: 0px;
+    left: 790px;
+    margin-right: 20px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 92%;
+    margin-bottom: 20px;
+    height: 65px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border: black 2px solid;
+}
+
+.tarjeta img {
+    position: relative;
+    height: 30px;
+    left: 20px;
+    top: 18px;
+}
+
+.dadesTarjeta {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    bottom: 10px;
+    position: relative;
+    left: 80px;
+    font-size: 18px;
+}
+
+.tarjeta button {
+    position: relative;
+    background-color: #CA2E2E;
+    bottom: 55px;
+    left: 1135px;
+    width: 45px;
+    height: 58px;
+    border-radius: 999px;
+}
+
+.tarjeta button img {
+    position: relative;
+    left: -14px;
+    top: 4px;
+}
+
+.afegirTarjeta{
+    top: 10px;
+    left: -20px !important;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 18px !important;
+    font-weight: bold;
+}
+
+.afegirTarjeta span{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 999px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.panelNotificacions{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    height: 100%;
+    background-color: #007C99;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: black 3px solid;
+}
+
+.panelNotificacions.active {
+    right: 0px;
+}
+
+.panelNotificacions button {
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    right: 140px;
+}
+
+.panelNotificacions button:hover{
+    transform: scale(1.2);
+}
+
+.panelNotificacions h1 {
+    position: relative;
+    font-size: 32px;
+    color: white;
+    bottom: 15px;
+}
+
+.panelNotificacions hr{
+    position: absolute;
+    width: 80%;
+    top: 140px;
+    background-color: white;
+    opacity: 1;
+}
+
+.panelNotificacions p{
+    position: relative;
+    top: 240px;
+    color: white;
+    font-size: 20px;
+    opacity: 0.5;
+    text-shadow: none;
+    text-align: center;
+}
+
+.carretInferior {
+    position: absolute;
+    width: 100%;
+    top: 750px;
+    height: 220px;
+    color: white;
+}
+
+.carretInferior hr {
+    position: relative;
+    top: 10px;
+}
+
+.loginForm p:hover {
+    transform: scale(1.1);
+}
+
+.carretInferior span {
+    position: absolute;
+    top: 52px;
+    margin-left: 20px;
+    margin-right: 200px;
+    font-size: 32px;
+    font-weight: lighter;
+    left: 15px;
+}
+.carretInferior p {
+    position: relative;
+    top: 0px;
+    left: 90px;
+    opacity: 1;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-weight: 1000;
+}
+
+.carretInferior button {
+    background-color: #FFCC00;
+    color: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 28px;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease-in-out; 
+    position: relative;
+    left: 36px;
+    bottom: 10px;
+}
+
+.carretInferior button:hover {
+    transform: scale(1.05);
+}
+
+.carretInferior .deshabilitat {
+    background-color: white;
+    color: #007C99;
+}
+
+.carretInferior .deshabilitat:hover {
+    transform: none;
+    cursor: default;
+}
+
+.addCarreto2 {
+    font-size: 18px; 
+    bottom: 20px;
+    position: relative;
+    font-weight: 100;
+    padding: 6px 45px;
+}
+
+.addCarreto2Deshabilitat {
+    font-size: 18px; 
+    bottom: 20px;
+    position: relative;
+    font-weight: 100;
+    padding: 6px 45px;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    opacity: 0.2;
+}
+
+.addCarreto2Deshabilitat:hover {
+    transform: none;
+    cursor: default;
+}
+
+.carretPle {
+    position: relative;
+    height: 50px;
+    width: 225px;
+    background-color: #FFCC00;
+    color: #007C99;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.carretPle img{
+    filter: none;
+    top: 13px;
+    left: 20px;
+}
+
+.carretPle .unitats {
+    position: relative;
+    background-color: #007C99;
+    color: #FFCC00;
+    border-radius: 100px;
+    padding: 2px 9px;
+    top: 10px;
+    left: 40px;
+    font-size: 24px;
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+.carretPle .preu {
+    position: absolute;
+    top: 8px;
+    left: 125px;
+    font-size: 32px;
+    font-weight: lighter;
+    text-shadow: none;
+
+}
+
+.invisible {
+    opacity: 0 !important;
+}
+
+.productesCarret {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    bottom: 80px;
+    gap: 40px;
+    display: flex;
+}
+
+.producteCarret{
+    height: 120px;
+    width: 85%;
+}
+
+.producteCarret img{
+    background-color: white;
+    width: 120px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.producteCarret .nom{
+    position: relative;
+    top: -115px;
+    left: 15px;
+    font-size: 24px;
+    font-weight: lighter;
+    opacity: 1;
+    font-size: 15px;
+}
+
+.producteCarret .preu{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    top: -135px;
+    left: 41px;
+    font-weight: lighter;
+    text-shadow: none;
+    opacity: 1 !important;
+}
+
+.producteCarret hr{
+    position: relative;
+    height: 3px;
+    opacity: 0.2;
+    width: 142px;
+    top: -150px;
+    left: 65px;
+}
+
+.producteCarret .alCarret{
+    position: relative;
+    top: -160px;
+    left: 25px;
+    font-size: 24px;
+    font-weight: lighter;
+    opacity: 1;
+    font-size: 15px;
+}
+
+.producteCarret .unitats{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    top: -182px;
+    left: 21px;
+    font-weight: lighter;
+    text-shadow: none;
+    opacity: 1 !important;
+}
+
+.producteCarret .botonsUnitats {
+    width: 71px;
+    height: 33px;
+    position: relative;
+    bottom: 240px;
+    left: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.producteCarret .botonsUnitats img {
+    position: relative;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    background-color: #CA2E2E;
+    filter: none;
+    padding: 6px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease-in-out;  
+
+}
+
+.producteCarret .botonsUnitats .sumarUnitat {
+    position: relative;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    background-color: #FFCC00;
+    filter: none;
+    padding: 6px;
+    left: 0px;
+    top: -20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    opacity: 1;
+    color: black;
+    transition: transform 0.1s ease-in-out;  
+}
+
+.producteCarret .botonsUnitats img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.producteCarret .botonsUnitats .sumarUnitat:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tornarAlsProductes {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    font-size: 24px; 
+    height: 30px;
+    transition: transform 0.1s ease-in-out;  
+}
+
+.tornarAlsProductes img{
+    position: relative;
+    top: 4px;
+    height: 25px;
+    width: 25px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+    margin-right: 15px;
+}
+
+.tornarAlsProductes:hover{
+    transform: scale(1.1);
+}
+
+.configComanda {
+    position: relative;
+    background-color: white;
+    width: 810px;
+    height: auto; 
+    border: black 2px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    right: 180px;
+    margin: 10px 0px;
+    top: 20px;
+    padding-bottom: 30px;
+}
+
+.configComanda h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.configComanda p {
+    position: relative;
+    margin-left: 20px;
+    font-size: 14px;
+    bottom: 15px;
+    
+}
+
+.configComanda hr {
+    position: relative;
+    width: 95%;
+    top: 0px;
+}
+
+.diesRecollida {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 95%;
+    height: 80px;
+    gap: 10px;
+    bottom: 20px;
+}
+
+.diesRecollida img{
+    height: 25px;
+    width: 25px;
+    left: 10px;
+    position: relative;
+    margin-bottom: -10px ;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-in-out;
+}
+
+.dia .numero{
+    background-color: white;
+    border-radius: 100px;
+    border: black 2px solid;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+
+.dia .text{
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    right: 10px;
+}
+
+.mesDies img{
+    height: 25px;
+    width: 25px;
+    left: 30px;
+    top: 20px;
+}
+
+.mesDies p{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    right: 10px;
+}
+.mesDies{
+    margin-left: 20px;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+.deshabilitat .numero {
+    background-color: black;
+    color: white;
+}
+
+.seleccionat .numero {
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    border: #FFCC00 2px solid;
+}
+
+.dia:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.mesDies:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.rellotge {
+    position: relative;
+    height: 50px;
+    width: 205px;
+    left: 20px;
+    bottom: 10px;
+}
+
+input[type="time"] {
+    height: 100%;
+    border: black 2px solid;
+    border-radius: 100px;
+    font-size: 26px;
+    font-weight: 900;
+    padding: 0px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Inter', sans-serif;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+input[type="time"]:hover {
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+
+.configComanda .tarjeta {
+    position: relative;
+    width: 95%;
+    height: 65px;
+    margin: 10px auto;
+}
+
+
+.configComanda .tarjeta img {
+    position: relative;
+    top: 6px;
+    left: 18px;
+}
+
+.configComanda .dadesTarjeta {
+    position: relative;
+    width: 80%;
+    padding-left: 45px;
+    bottom: 20px;
+}
+
+.configComanda .tarjeta input[type="radio"] {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    top: 10px;
+    left: 10px;
+    transition: transform 0.1s ease-in-out; 
+}
+
+.configComanda .tarjeta input[type="radio"]:checked {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+}
+
+.configComanda .tarjeta input[type="radio"]:not(:checked):hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.dadesTarjeta.saldo{
+    position: relative;
+    left: 30px;
+}
+
+.saldoDisp{
+    position: relative;
+    left: 50px;
+
+}
+
+.configComanda .afegirTarjeta {
+    position: relative;
+}
+
+.resumComanda {
+    position: relative;
+    background-color: white;
+    width: 350px;
+    height: auto; 
+    border: black 2px solid;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    left: 420px;
+    margin: 10px 0px;
+    bottom: 678px;
+    padding-bottom: 30px;
+}
+
+.resumComanda h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.resumComanda span {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.resumComanda .preu {
+    position: relative;
+    left: 140px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.resumComanda button {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    width: 88%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popupFinalitzar {
+    background: #DEF4FF;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.2s ease;
+}
+
+.popupFinalitzar p {
+    font-size: 20px;
+    width: 300px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.popupFinalitzar img {
+    width: 120px;
+    height: 120px;
+}
+
+.popupFinalitzar h1 {
+    position: relative;
+    right: 100px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.popupFinalitzar button {
+    border-radius: 100px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease-in-out; 
+}
+
+.popupTarjeta {
+    background: #DEF4FF;
+    border-radius: 12px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.2s ease;
+    opacity: 1 !important;
+
+}
+
+.popupTarjeta p {
+    opacity: 1 !important;
+
+}
+
+.popupTarjeta h1{
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: lighter;
+    align-self: center;
+    margin-bottom: 35px;
+}
+
+
+.popupTarjeta input[type="text"] {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: transparent;
+    bottom: 30px;
+    padding: 0px 10px;
+    border: black 2px solid;
+
+}
+
+.popupTarjeta label{
+    position: relative;
+    width: 65%;
+    height: 90px;
+    bottom: 20px;
+    margin-right: 30px;
+    align-self: center;
+    opacity: 1 !important;
+}
+
+.popupTarjeta label{
+    position: relative;
+    width: 65%;
+    height: 90px;
+    bottom: 20px;
+    margin-right: 30px;
+    align-self: center;
+    opacity: 1 !important;
+}
+
+.popupTarjeta span{
+    position: relative;
+    width: 69%;
+    right: 3px;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 15px;
+}
+
+.popupTarjeta button{
+    top: 0px;
+    left: 0px;
+    padding: 10px 35px;
+    font-size: 24px;
+}
+
+.popupTarjeta .deshabilitat{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="estils.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a href="homeLoggedOut.html"><img src="img/Ca La Pilar.png" alt="logo" class="logo"></a>
+        <div class="buscador">
+            <a href="buscarProductesLoggedOut.html"><img src="img/busqueda.png" alt="lupa" class="lupa"></a>
+            <input type="text" placeholder="Buscar productes..." value="p">
+            <a href="allProductsLoggedOut.html"><img src="img/creu.png" alt="tancar" class="tancar"></a>
+        </div>
+        <div class="dreta">
+            <a href="login.html">Identificat</a>
+        </div>
+    </nav>
+    <hr class="vertical">
+    <div class="sidebar">   
+        <h1>Rang de preu (€)</h1>
+        <input type="number" name="min" id="min" min="0" max="1000"placeholder="Min">
+        <input type="number" name="max" id="max" min="0" max="1000" placeholder="Max"> 
+        <br><br>
+        <h1>Categories</h1>
+        <div class="categories">
+            <label>
+                Begudes
+                <input type="checkbox" name="begudes">
+            </label><br>
+
+            <label>
+                Entrepans
+                <input type="checkbox" name="entrepans">
+            </label><br>
+
+            <label>
+                Per picar
+                <input type="checkbox" name="perpicar"> 
+            </label><br>
+
+            <label>
+                Fruita
+                <input type="checkbox" name="fruita" checked>
+            </label><br>
+
+            <label>
+                Menú                
+                <input type="checkbox" name="menu">
+            </label><br>
+
+            <label>
+                Especials                
+                <input type="checkbox" name="especials">
+            </label>
+        </div>
+        <h1>Ordenar per</h1>
+        <div class="selector">
+            <label>
+              <input type="radio" name="opcio" checked>
+              <span>Popularitat</span>
+            </label>
+            <label>
+              <input type="radio" name="opcio">
+              <span>Preu més alt</span>
+            </label>
+            <label>
+              <input type="radio" name="opcio">
+              <span>Preu més baix</span>
+            </label>
+        </div>
+    </div>
+    <div class="catalog">
+        <h1>S’han trobat 3 resultats per “p”</h1>
+        <div class="paginacion">
+            <span class="deshabilitat">← Anterior</span>
+            <span class="negre">1</span>
+            <span class="deshabilitat">Següent →</span>
+        </div>
+        <div class="productes">
+            <div class="producte">
+                <img src="img/poma.png" alt="producte1">
+                <p>Poma</p>
+                <span><b>0,35</b></span><span> €/ud</span>
+            </div>
+            <div class="producte">
+                <img src="img/platan.png" alt="producte1">
+                <p>Platan</p>
+                <span><b>0,20</b></span><span> €/ud</span>
+            </div>
+            <div class="producte">
+                <img src="img/pera.png" alt="producte1">
+                <p class="deshabilitat">Pera</p>
+                <span class="deshabilitat"><b>0,40</b></span><span class="deshabilitat"> €/ud</span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
